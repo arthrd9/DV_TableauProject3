@@ -4,7 +4,6 @@ output: html_document
 ---
 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r}
 summary(c)
@@ -13,7 +12,18 @@ summary(c)
 Here are our embedded plots from Tableau.
 
 ```{r, echo=FALSE}
-plot(cars)
-```
+plot(outpatient)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+plot(inpatient)\```
+#The first compiles outpatient services by state, demonstrating the main hospitals and states in the us 
+#affected in our datasets.
+![](./sheet1.png)
+
+# The second shows specific location and payment intesive areas from both sets, as well as total 
+#discharges. 
+![](./sheet2.png)  
+# This sheet shows average distribution of total charges nation wide.
+![](./sheet3.png)  
+#The fourth is an average measure of charges comparing outpatient to inpatient services. 
+![](./sheet4.png)    
+
